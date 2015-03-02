@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Lato', serif;
+}
+
+* {
+	font-weight: 300 !important;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eff7ff;
+	padding: 0 5vw;
+	padding-top: 75px;
+}
+
+#header {
+	background-color: #336699;
+	height: 75px;
+	width: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+	overflow: auto;
+}
+
+#header h1 {
+	margin-top: 15px;
+	margin-left: 5vw;
+	color: white;	
+}
+
+.item {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+	background-color: white;
+	overflow: auto;
+	margin-top: 10px;
+	padding: 25px 5vw;
+	display: table;
+	width: 100%;
+	table-layout: static;
+}
+
+.item .title {
+	vertical-align: middle;
+	padding-left: 15px;
+	display: table-cell;
+	font-size: 1.1em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.item .thumbnail {
+	vertical-align: middle;
+	display: table-cell;
+	width: 128px;
+}
