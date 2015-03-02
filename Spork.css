@@ -42,14 +42,17 @@ body {
 }
 
 .item {
+	margin-top: 10px;
+	display: block;
+}
+
+.item .content {
+	display: table;
+	table-layout: fixed;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 	background-color: white;
-	overflow: auto;
-	margin-top: 10px;
 	padding: 25px 5vw;
-	display: table;
 	width: 100%;
-	table-layout: static;
 }
 
 .item .title {
@@ -68,4 +71,29 @@ a {
 	vertical-align: middle;
 	display: table-cell;
 	width: 128px;
+}
+
+.item .selftext {
+	background-color: white;
+	margin: 0 2vw;
+	position: relative;
+	top: -5px;
+	z-index: -1;
+	padding: 0;
+	overflow: hidden;
+	transform: translateY(-100%);
+	transition: transform 250ms linear;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.item .hider {
+	overflow: hidden;
+}
+
+.item .hider.shown .selftext {
+	transform: translateY(0);
+}
+
+.item .selftext .md {
+	padding: 10px 2vw;
 }
