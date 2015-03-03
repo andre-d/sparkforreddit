@@ -21,10 +21,10 @@ Spork.UI.LinkItem = Backbone.View.extend({
     },
     toggle: function() {
     	if (this.paragraph.hasClass('shown')) {
-    		this.paragraph.animate({height: 0}, 250, 'linear');
+    		this.paragraph.css('height', 0)
     	} else {
     		var fullheight = this.paragraph.find('.selftext').height();
-    		this.paragraph.animate({height: fullheight}, 250, 'linear');
+    		this.paragraph.css('height', fullheight)
     	}
     	this.paragraph.toggleClass('shown')
     },
